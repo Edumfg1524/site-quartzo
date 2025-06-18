@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>QuatzoStone</title>
+</head>
+<body>
+    
+<div class="caixa-video">
+    <video src="videos/video-principal-logo.mp4" loop muted autoplay></video> <!-- video de fundo -->
+    <div class="mascara"></div>
+</div>
+
+<header class="header">
+    <section>
+         
+        <a href="">
+            <img src="img/logo-principal.png" alt="Logo-Principal"> <!--logo-->
+        </a>
+
+        <nav class="navegacao">
+            
+        
+                <ul class="menu-navegacao">
+                        <li>
+                            <a href="#home" class="menu-link" id="porta">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#sobre" class="menu-link" id="porta">Sobre</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="menu-link" onclick="mostrarModal(event)">Endereço</a>
+                        </li>
+
+                        <li>
+                            <a href="#perguntas" class="menu-link" id="porta">Perguntas</a>
+                        </li>
+
+                </ul>
+        </nav>
+
+    </section>
+</header>
+
+    <section class="caixa-principal" id="home">
+        <div>
+            <h3>Toque de luxo, olhar de desejo <span>QUARTZO</span></h3>
+            <p>Descubra o poder da sofisticação em cada superfície. Nossos acabamentos em quartzo combinam brilho, resistência e design para transformar qualquer ambiente em um espaço de desejo. Um toque basta para sentir o luxo. Um olhar, e já não se esquece.</p>
+            <div>
+                <button onclick="enviarWhats()" class="botao-link">Faça Seu Orçamento</button>
+              </div>
+        </div>
+    </section>
+
+    <section class="caixa-sobre" id="sobre">
+        <h2 class="titulo"><span>Sobre</span> Nós</h2>
+        <div class="sobre-container">
+            <div class="sobre-imagem">
+                <img src="img/quartzo-sobre.png" alt="sobre-nos"> 
+            </div>
+
+            <div class="sobre-texto">
+                <h3>O Que Faz Especial</h3>
+                <p>Não entregamos apenas superfícies. Entregamos desejo em estado sólido.
+                    Cada peça em quartzo que sai da nossa empresa carrega mais do que brilho — carrega atitude, personalidade e presença.
+                    O corte é preciso, o acabamento é impecável, e o impacto... inevitável.
+                    
+                    Transformamos ambientes comuns em espaços provocantes, sofisticados, vivos.
+                    Onde suas mãos tocam, o luxo responde. Onde os olhos repousam, a beleza seduz.
+                    Trabalhamos com tecnologia de ponta, materiais de alto padrão e uma obsessão: fazer do seu projeto uma experiência sensorial única.
+                    
+                    É mais que design. É arte que se sente. É pedra que desperta desejo.</p>
+                <a href="" class="botao-link">Saiba Mais</a> 
+            </div>
+
+        </div>
+    </section>
+
+  
+    
+    
+    <div class="modal">
+        <h3 class="titulo"><span class="span-modal">Nosso Endereço</span></h3>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.7560305014454!2d-49.19808252599768!3d-25.379491830892537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce8aef58351e7%3A0x82f8967469ffac50!2sR.%20Don%C3%A1%20Nen%C3%AA%2C%20171%20-%20Atuba%2C%20Curitiba%20-%20PR%2C%2082860-460!5e0!3m2!1spt-BR!2sbr!4v1746507451753!5m2!1spt-BR!2sbr" 
+          width="100%" 
+          height="350" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      
+      <div class="mascara-modal" onclick="esconderModal()"></div>
+
+      <section class="faq-section" id="perguntas">
+        <h2>Perguntas Frequentes</h2>
+        <div class="faq">
+          <div class="pergunta" onclick="toggleResposta(this)">
+            Quanto tempo leva para instalar o quartzo?
+            <div class="resposta">
+              Normalmente leva de 3 a 5 dias úteis, dependendo do tamanho e da complexidade do projeto.
+            </div>
+          </div>
+          <div class="pergunta" onclick="toggleResposta(this)">
+            Vocês fazem entrega em outras cidades?
+            <div class="resposta">
+              Sim! Atendemos diversas regiões, entre em contato para consultar o frete.
+            </div>
+          </div>
+          <div class="pergunta" onclick="toggleResposta(this)">
+            O quartzo risca ou mancha com facilidade?
+            <div class="resposta">
+              Não. O quartzo é resistente a riscos e manchas, sendo ideal para cozinhas e banheiros.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      
+      <a href="https://wa.me/5541991498368?text=Olá%2C%20gostaria%20de%20fazer%20um%20orçamento%20por%20aqui." 
+      class="botao-whatsapp" 
+      target="_blank" 
+      aria-label="Fale conosco no WhatsApp">
+     <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
+   </a>
+
+ 
+ 
+      
+
+<script src="script.js"></script>
+</body>
+</html>
